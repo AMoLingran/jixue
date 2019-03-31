@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1044526040291",
+    "firebase_url": "https://qujici.firebaseio.com",
+    "project_id": "qujici",
+    "storage_bucket": "qujici.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044526040291:android:256b78e2406a8181",
+        "android_client_info": {
+          "package_name": "com.study.molingran.qujixue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044526040291-4dkicm1lbs0ovm0ebi7lpig7d8m26q9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.study.molingran.qujixue",
+            "certificate_hash": "96280d47c1da461287eacbcb9ef47a85db6ebbc9"
+          }
+        },
+        {
+          "client_id": "1044526040291-hc44auaada53e4igieve5qscqlhb5uqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoLtDC2XxpMxes8VwVLnlb5iqDmjYmaDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044526040291-hc44auaada53e4igieve5qscqlhb5uqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

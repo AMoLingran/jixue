@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">趣积学</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_discover">发现</string>
+    <string name="title_study">学习</string>
+    <string name="title_mine">我的</string>
+    <string name="title_activity_settings">Settings</string>
+    <!--设置-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera_and_location_rationale">2</string>
+    <string name="rationale_ask_again">
+        This app may not work correctly without the requested permissions.
+        Open the app settings screen to modify app permissions.
+    </string>
+</resources>

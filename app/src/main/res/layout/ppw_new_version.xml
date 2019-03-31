@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:id="@+id/Constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_new_version"
+        android:minWidth="300dp"
+        android:minHeight="430dp"
+        tool:context=".NewVersionPopupWindow">
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/ic_new_version_coluor2"
+            android:id="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tv_speed"
+            app:layout_constraintTop_toBottomOf="@+id/pb_progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/pb_progressBar"
+            android:textColor="@color/white" tool:text="已下载53%"
+            app:layout_constraintStart_toStartOf="@+id/pb_progressBar" android:layout_marginStart="8dp"/>
+    <ScrollView
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/sv"
+            app:layout_constraintBottom_toTopOf="@+id/btn_now_update"
+            android:layout_height="0dp"
+            android:scrollbars="none">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:scrollbars="none"
+                      android:gravity="center_horizontal"
+        >
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_new_version"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/black12"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="新版本"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_versioncode"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black12"
+                    tool:text="version 0.2.5.0215"/>
+            <TextView
+                    android:text="本次更新："
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_1" android:paddingTop="15dp"
+                    android:textColor="@color/black12"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_content"
+                    android:textColor="@color/black12"
+                    tool:text="新增更新弹窗"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_future" android:paddingTop="25dp"
+                    android:textColor="@color/black12"
+                    android:textSize="16sp"
+                    android:text="更新预告："/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+            android:text="立即更新"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_now_update"
+            app:layout_constraintEnd_toEndOf="@+id/sv"
+            app:layout_constraintStart_toStartOf="@+id/sv"
+            android:background="@drawable/ripple_btn_update"
+            android:textColor="@color/white"
+            android:textSize="16sp" app:layout_constraintBottom_toTopOf="@+id/tv_ignore_up"
+            android:layout_marginBottom="8dp"/>
+    <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_close_colour"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/imgbtn_close"
+            android:background="@null"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            tool:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="忽略此次更新"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ignore_up" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/btn_now_update"
+            app:layout_constraintStart_toStartOf="@+id/btn_now_update"
+            android:textColor="@color/black26"/>
+</android.support.constraint.ConstraintLayout>

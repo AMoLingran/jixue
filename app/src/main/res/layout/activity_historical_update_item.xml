@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/divider_padding"
+    android:paddingTop="@dimen/divider_padding"
+    android:paddingEnd="20dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black87"
+        android:textSize="20sp"
+        tools:text="将检查更新扩充为“关于”界面" />
+
+    <TextView
+        android:id="@+id/tv_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/divider_padding"
+        android:textColor="@color/black54"
+        android:textSize="18sp"
+        tools:text="0.2.3.0213" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/black12" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0088ff</color>
+    <color name="colorPrimaryDark">#f6f6f6</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTheme">#0088ff</color>
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="black">#000000</color>
+    <!--[87% 普通文字] [54% 减淡文字] [26% 禁用状态/提示文字] [12% 分隔线]-->
+    <color name="black87">#212121</color>
+    <color name="black54">#757575</color>
+    <color name="black26">#BDBDBD</color>
+    <color name="black12">#E1E1E1</color>
+    <color name="black_secondary">#86000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="btn_disable">#420088ff</color>
+    <color name="red">#DA2D2D</color>
+
+</resources>

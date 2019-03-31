@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="账号管理（临时）"
+            android:singleLine="true">
+
+        <EditTextPreference
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:key="nickname" android:title="设置昵称"
+                android:hint="请输入昵称"
+                android:summary="当前昵称"/>
+        <Preference
+                android:title="设置头像"
+                android:key="setAvatar"
+                android:singleLine="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="登陆设置"
+            android:singleLine="true">
+        <SwitchPreference
+                android:defaultValue="false"
+                android:title="自动登陆" android:key="autoLogin"
+                android:singleLine="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
